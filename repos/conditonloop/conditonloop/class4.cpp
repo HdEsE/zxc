@@ -1,12 +1,17 @@
 #include <cstdio>
 
 int main() {
+	int input;
+	printf("숫자를 입력해라: ");
+	scanf_s("%d", &input);
 
-	int count = 0;
-	// 0부터 99까지 (100번)
-	for (int i = 0; i < 100; i++) {
-		count = count + 10;
+	if (input <= 0) {
+		printf("잘못 입력하셨습니다.");
 	}
-	printf("count: %d", count);
+	else{
+		for (int i = 0; i < input; i++) {
+			printf("A");
+	}
+
 	return 0;
 }
