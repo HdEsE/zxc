@@ -14,4 +14,5 @@ int main() {
 	printf("제곱은 %d", value2*value2);
 	return 0;
 	// 이것은 실험을 위한 주석
+	// 이것은 실험을 위한 주석2
 }
