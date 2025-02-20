@@ -10,7 +10,5 @@ int main() {
 	};
 	printf("%d", multiArray[0][1]);
 
-	
-	
 	return 0;
 }
