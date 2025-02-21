@@ -1,19 +1,14 @@
 #include <cstdio>
 
 int main() {
-	int raw;
-	int col;
-	printf("가로(행): ");
-	scanf_s("%d", &raw);
-	printf("세로(열): ");
-	scanf_s("%d", &col);
-
-	for (int i = 0; i < raw; i++) {
-		for (int k = 0; k < col; k++) {
+	int input;
+	printf("입력하세요: ");
+	scanf_s("%d", &input);
+	for (int i = 0; i < input; i++) {
+		for (int k = 0; k < i + 1; k++) {
 			printf("*");
 		}
 		printf("\n");
 	}
 	return 0;
 }
-
