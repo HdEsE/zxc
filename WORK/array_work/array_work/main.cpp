@@ -1,20 +1,16 @@
 #include <cstdio>
 
 int main() {
-	int array[20];
-	
-	array[0] = 1;
-	array[1] = 1;
+	int array[10][10];
 
-	for (int i = 2; i < 20; i++) {
-		array[i] = array[i - 1] + array[i - 2];
-	}
-
-	for (int k = 0; k < 20; k++) {
-		printf("%d\n", array[k]);
+	for (int i = 0; i < 10; i++) {
+		for (int k = 0; k < 10; k++) {
+			array[i][k] = 10 * i + (k + 1);
+			printf("%d ", array[i][k]);
+		}
+		printf("\n");
 	}
 
 	return 0;
 }
 
-// 1 1 2 3 5 8 13 21 ...
